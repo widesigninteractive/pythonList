@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Wellcome to Widesign</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <style>
+.box {
+  background-color: #fff;
+  border: 5px solid #fff;
+  padding: 20px;
+  margin-right: 450px;
+  margin-left: 450px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.kk{
+  background-color: #fff;
+}
+body{
+  background-color: #333 ;
+
+}
+.hh{
+  background-color: #fff;
+  border: 10px;
+  padding: 20px
+}
+.button {
+  background-color: #666;
+  border: 2px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-grid;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+</style>
+  <body>
+      <div class="kk">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a  href="https://widesigninc.com"style="color: #fff;text-align: center;"><img src="https://widesigninc.com/wp-content/uploads/2020/08/logo-339x80-trans.png" alt="Italian Trulli"></a>
+    </nav>
+
+    <center><h1>Documentation Verification</h1></center>
+
+    <br><br><br>
+
+    <form class="hh" action="{% url 'EmployeeCheck' %}" method="post">
+      {% csrf_token %}
+      <center>
+  Employee ID <input type="text" name="python1" value="{{py1}}">
+      <input type="submit" name="" class="button"  value="submit"></center>
+
+    </form>
+
+<br>
+  <center><div class="box"><h4>Documentation Verification:{{output}}</h4></div></center><br>
+  <center><h4>{{db.empid}}</h4></center>
+
+</div>
+<center><h5 style= text-align: center;"><a href="https://widesigninc.com">For more information</a></h5></center>
+</div></div>
+
+  </body>
+</html>

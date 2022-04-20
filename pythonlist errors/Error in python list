@@ -1,0 +1,59 @@
+CSRF verification failed. Request aborted.
+if you this error add this syntax to forms <>tage
+{% csrf_token %}
+
+
+
+error:MultiValueDictKeyError at /List/
+https://www.youtube.com/watch?v=Ol_IW624tjk
+
+
+
+context must be a dict rather than list.
+https://stackoverflow.com/questions/13373832/python-local-variable-string-referenced-before-assignment
+
+error:local variable 'str' referenced before assignment ('QueryDict' object is not callable) both are same but difference is {Dict} and " string"
+
+Examples::
+
+def update_string():
+    global string # <<< declare `string` as global variable.
+    string+='d'
+string='s'
+
+update_varibles()
+
+
+
+error:'str' object is not callable
+https://www.youtube.com/watch?v=06CWYEW4FyQ
+
+
+error:python HttpResponseRedirect
+https://www.youtube.com/watch?v=0YzuLCY-F4U
+
+
+
+The view myApp.views.List didn't return an HttpResponse object. It returned None instead.
+
+
+UnboundLocalError: local variable “v1” referenced before assignment
+https://www.stechies.com/unboundlocalerror-local-variable-referenced-before-assignme/#:~:text=The%20%E2%80%9Clocal%20variable%20referenced%20before,variable%20without%20assigning%20any%20value.&text=Explanation%3A,the%20function%20%E2%80%9Cmyfunction()%E2%80%9D.
+
+22-03-2022
+Note:
+https://www.youtube.com/watch?v=nuW0o4-dSpo
+[Data1,Data2,Data3,Data4,Data5,Data00]
+
+How to Access Function variables in Another Function
+https://stackoverflow.com/questions/32822473/how-to-access-function-variables-in-another-function
+
+SyntaxError: unexpected EOF while parsing
+https://stackoverflow.com/questions/43189302/syntaxerror-unexpected-eof-while-parsing
+
+note:
+and html changing as pre the views
+
+
+Convert Django Model object to dict with all of the fields intact
+db.name+" "+db.empid
