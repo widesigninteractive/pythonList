@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Wellcome to Widesign</title>
+    <title>Widesign</title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,16 +15,16 @@
   background-color: #fff;
   border: 5px solid #fff;
   padding: 20px;
-  margin-right: 450px;
-  margin-left: 450px;
-  padding-bottom: 20px;
+  margin-right: 200px;
+  margin-left: 200px;
+  padding-bottom: 110px;
   text-align: center;
 }
 .kk{
   background-color: #fff;
 }
 body{
-  background-color: #333 ;
+  background-color: #192257;
 
 }
 .hh{
@@ -33,46 +33,47 @@ body{
   padding: 20px
 }
 .button {
-  background-color: #666;
+  background-color: #ff5e29;
   border: 2px;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 29px;
   text-align: center;
   text-decoration: none;
   display: inline-grid;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 13px;
+  margin: 3px 1px;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 11px;
 }
 </style>
   <body>
       <div class="kk">
-    <nav class="navbar navbar-inverse">
+    <nav class=""navbar navbar-light" style="background-color: #ff5e29;"">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a  href="https://widesigninc.com"style="color: #fff;text-align: center;"><img src="https://widesigninc.com/wp-content/uploads/2020/08/logo-339x80-trans.png" alt="Italian Trulli"></a>
+          <a  href="https://widesigninc.com"><img src="https://widesigninc.com/wp-content/uploads/2020/10/widesign-logo-2020-v1.pngwhite-.png" width="137" height="55"  alt="widesign"></a>
     </nav>
 
-    <center><h1>Documentation Verification</h1></center>
+    <center><h1>Document Verification</h1></center>
 
     <br><br><br>
 
     <form class="hh" action="{% url 'EmployeeCheck' %}" method="post">
       {% csrf_token %}
       <center>
-  Employee ID <input type="text" name="python1" value="{{py1}}">
-      <input type="submit" name="" class="button"  value="submit"></center>
+  <h4>Employee ID &nbsp;&nbsp;<input type="text" name="python1" value="{{py1}}">
+      <input type="submit" name="" class="button"  value="submit"></center></h4>
 
     </form>
 
 <br>
-  <center><div class="box"><h4>Documentation Verification:{{output}}</h4></div></center><br>
-  <center><h4>{{db.empid}}</h4></center>
+  <center><div class="box"><h4>Document Verification:{{output}}</h4><h4>For more details please reach out to hr@widesigninc.com</h4></div></center><br>
+  <center><h4>{{db.empid}}</h4>
+</center>
 
 </div>
-<center><h5 style= text-align: center;"><a href="https://widesigninc.com">For more information</a></h5></center>
+<center><p style="color:#fff";>For more information &nbsp;&nbsp;<a href="https://widesigninc.com" style="color:#fff;">widesigninc.com</a></p>
+</center>
 </div></div>
-
   </body>
 </html>

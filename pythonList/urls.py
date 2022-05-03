@@ -19,7 +19,8 @@ from myApp import views
 
 urlpatterns = [
      path('admin/', admin.site.urls),
-    path('home/',views.home),
-    path("EmployeeCheck/", views.EmployeeCheck, name="EmployeeCheck"),
+     path('',views.home, name='home'),
+     path('hometwo/',views.home, name='hometwo'),
+     path("EmployeeCheck/", views.EmployeeCheck, name="EmployeeCheck"),
     #path("EmpDataB/", views.EmpDataB, name="EmpDataB"),
 ]
